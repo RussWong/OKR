@@ -45,3 +45,8 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
+
