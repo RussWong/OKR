@@ -1,0 +1,90 @@
+<p id="notice"><%= notice %></p>
+<div class="center ziti">
+  
+<!-- <h3>xuhao</h3> -->
+
+  <strong>Objects num:</strong>
+  <%= @okr.Objects_num %>
+</p>
+<hr>
+  
+ <h4>我的第一季度OKR</h4> 
+</p>
+  <strong>Objects:</strong>
+  <%= @okr.Objects %>
+&nbsp;&nbsp;&nbsp;
+  <strong>Kr1:</strong>
+  <%= @okr.KR1 %>
+&nbsp;&nbsp;&nbsp;
+  <strong>Kr2:</strong>
+  <%= @okr.KR2 %>
+&nbsp;&nbsp;&nbsp;
+  <strong>Kr3:</strong>
+  <%= @okr.KR3 %>
+&nbsp;&nbsp;&nbsp;
+  <strong>Kr completeness:</strong>
+  <%= @okr.KR_COMPLETENESS %>
+&nbsp;&nbsp;&nbsp;
+  <strong>Weight:</strong>
+  <%= @okr.WEIGHT %>
+&nbsp;&nbsp;&nbsp;
+  <strong>Cof index:</strong>
+  <%= @okr.COF_INDEX %>
+<hr>
+<h4>小组第一季度OKR</h4>
+  <strong>Objects_G:</strong>
+  <%= @okr.Objects_G %>
+&nbsp;&nbsp;&nbsp;
+   <strong>Kr1_G:</strong>
+  <%= @okr.KR1_G %>
+&nbsp;&nbsp;&nbsp;
+  <strong>Kr2_G:</strong>
+  <%= @okr.KR2_G %>
+&nbsp;&nbsp;&nbsp;
+  <strong>KR_G_completeness:</strong>
+  <%= @okr.KR_G_COMPLETENESS %>
+&nbsp;&nbsp;&nbsp;
+  <strong>KR_G_weight:</strong>
+  <%= @okr.KR_G_WEIGHT %>
+&nbsp;&nbsp;&nbsp;
+   <strong>KR_G_cof_index:</strong>
+  <%= @okr.KR_G_COF_INDEX %>
+  <hr>
+</p>
+<h4>团队第一季度OKR</h4>
+ <strong>Objects t:</strong>
+  <%= @okr.Objects_T %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <strong>KR1_T:</strong>
+  <%= @okr.KR1_T %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <strong>KR2_T:</strong>
+  <%= @okr.KR2_T %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <strong>KR_T_COMPLETENESS:</strong>
+  <%= @okr.KR_T_COMPLETENESS %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <strong>KR_T_WEIGHT:</strong>
+  <%= @okr.KR_T_WEIGHT %>
+&nbsp;&nbsp;&nbsp;&nbsp;
+  <strong>KR_T_COF_INDEX:</strong>
+  <%= @okr.KR_T_COF_INDEX %>
+<hr>
+</p>
+<h4>团队愿景使命和战略</h4>
+<strong>Vision:</strong>
+  <%= @okr.VISION %>
+&nbsp;&nbsp;
+  <strong>Mission:</strong>
+  <%= @okr.MISSION %>
+&nbsp;&nbsp;
+  <strong>Strategy:</strong>
+  <%= @okr.STRATEGY %>
+  
+</p>
+<hr>
+<div id="show_1">
+<%= link_to 'Edit', edit_okr_path(@okr) %> |
+<%= link_to 'Back', okrs_path %>
+</div>
+</div>

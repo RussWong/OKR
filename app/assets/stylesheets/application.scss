@@ -1,0 +1,184 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.top{
+	height: 47px;
+	background-color: #fae8c8;
+	.top_c{
+	height: 47px;
+	line-height: 47px;
+	font-size: 20px;
+	color:white;
+	background-color: #700000;
+	}
+
+	
+}
+/*版心样式*/
+.center{
+	width:1300px;
+	margin: 0 auto; 
+	h1{
+	text-align: center;
+	}
+	#attention{
+	font-size: 50px; 
+
+}
+}
+.logo{
+	background-color: #fae8c8;
+	height:130px;
+	.l_c{
+	height: 130px;
+	background-color: #700000;
+	}
+     .l_left{
+     
+		h1{
+		a{
+	display:inline-block;
+	width: 375px;
+	height:99px;
+	background: url(../images/SJTU.png);
+	}	
+	}
+	}
+}
+.right{
+	display:inline-block;
+	width: 92px;
+	height:95px;
+	background: url(../images/logo120.png);
+}
+.jinru{
+	height: 550px;
+	}
+
+.dlong{
+	margin-top: 0;
+	}
+
+
+
+
+
+
+html,body,ul,li,p,h1,h2,h3,h4,img{
+	margin: 0;
+	padding: 0;
+}
+img{
+	border: 0;
+}
+ul{
+	list-style: none;
+}
+input{
+	padding-top: 0;
+	padding-bottom: 0;
+	border: 0;
+}
+select,input{
+	vertical-align: middle;
+}
+body{
+	font: normal normal 12px "楷体";
+	color:#4c4c4c;
+	background-color: #fae8c8;
+
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after{	
+	content: "";
+	height:0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+.clearfix{
+	zoom:1;
+}
+a{
+	text-decoration: none;
+}
+h5{
+	background-color: #700;
+	font: normal normal 20px "楷体";
+	color:#fff;
+	position: absolute;
+	top: 115px;
+	left: 400px;
+}
+#show2{
+	background-color: #700;
+	font: normal normal 20px "楷体";
+	color:#fff;
+	position: absolute;
+	top: 148px;
+	left: 530px;
+}
+#edit{
+	background-color: #700;
+	font: normal normal 20px "楷体";
+	color:#fff;
+	position: absolute;
+	top: 148px;
+	left: 650px;
+}
+#edit2{
+	background-color: #700;
+	font: normal normal 20px "楷体";
+	color:#fff;
+	position: absolute;
+	top: 148px;
+	left: 770px;
+}
+#daohang{
+	background-color: #700;
+	font: normal normal 20px "楷体";
+	color:#fff;
+	position: absolute;
+	top: 147px;
+	left: 280px;
+}
+#show2:hover{
+	background-color: gold;
+}
+h5:hover{
+	background-color: gold;
+}
+#edit:hover{
+	background-color: gold;
+}
+#edit2:hover{
+	background-color: gold;
+}
+.jpg{
+	position: absolute;
+	left: 710px;
+	top: 48px;
+}
+.jpgg{
+	position: absolute;
+	left: 900px;
+	top: 48px;
+}

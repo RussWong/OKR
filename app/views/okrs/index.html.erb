@@ -1,0 +1,119 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="center">
+<h1><b>WELCOME TO OKRS STATE OF OUR TEAM</b></h1>
+<hr>
+<h2>我的个人第一季度OKR</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Objects num</th>
+      <th>MyObjects</th>
+      <th>KR1</th>
+      <th>KR2</th>
+      <th>KR3</th>
+      <th>KR_completeness</th>
+      <th>Weight</th>
+      <th>Cof_index</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @okrs.each do |okr| %>
+      <tr>
+        <td><%= okr.Objects_num %></td>
+        <td><%= okr.Objects %></td>
+        <td><%= okr.KR1 %></td>
+        <td><%= okr.KR2 %></td>
+        <td><%= okr.KR3 %></td>
+        <td><%= okr.KR_COMPLETENESS %></td>
+        <td><%= okr.WEIGHT %></td>
+        <td><%= okr.COF_INDEX %></td>
+      </tr> 
+    <% end %>
+  </tbody>
+</table>
+<hr>
+<h2>小组第一季度OKR</h2>
+<table>
+  <thead>
+    <tr>
+      <th>小组Objects</th>
+      <th>小组KR1</th>
+      <th>小组KR2</th>
+      <th>小组KR完成度</th>
+      <th>小组KR权重(%)</th>
+      <th>小组KR信心指数</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @okrs.each do |okr| %>
+    <tr>
+      <td><%= okr.Objects_G %></td>
+      <td><%= okr.KR1_G %></td>
+      <td><%= okr.KR2_G %></td>
+      <td><%= okr.KR_G_COMPLETENESS %></td>
+      <td><%= okr.KR_G_WEIGHT %></td>
+      <td><%= okr.KR_G_COF_INDEX %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<hr>
+<h2>团队第一季度OKR</h2>
+<table>
+  <thead>
+    <tr>
+      <th>团队Objects</th>
+      <th>团队KR1</th>
+      <th>团队KR2</th>
+      <th>团队KR完成度</th>
+      <th>团队KR权重(%)</th>
+      <th>团队KR信心指数</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @okrs.each do |okr| %>
+    <tr>
+      <td><%= okr.Objects_T %></td>
+      <td><%= okr.KR1_T %></td>
+      <td><%= okr.KR2_T %></td>
+      <td><%= okr.KR_T_COMPLETENESS %></td>
+      <td><%= okr.KR_T_WEIGHT %></td>
+      <td><%= okr.KR_T_COF_INDEX %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<hr>
+<h2>团队使命愿景AND战略</h2>
+<table>
+  <thead>
+    <tr>
+      <th>团队愿景</th>
+      <th>团队使命</th>
+      <th>团队战略</th>
+      <th colspan="3">用户操作选项</th> 
+    </tr>   
+  </thead>
+  <tbody>
+    <% @okrs.each do |okr| %>
+    <tr>      
+        <td><%= okr.VISION %></td>
+        <td><%= okr.MISSION %></td>
+        <td><%= okr.STRATEGY %></td>
+        <td title="查看所有的此行OKR详细记录"><%= link_to '详情', okr %></td>
+        <td title="编辑所有的此行OKR详细记录"><%= link_to '编辑', edit_okr_path(okr) %></td>
+        <td title="删除所有的此行OKR记录"><%= link_to '删除', okr, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+    </tr>
+    <% end %>
+  </tbody>
+</table> 
+</div>
+
+<br>
+
+<h2 style="font:italic normal bold 30px Arial;color: #B22222"><%= link_to '点击添加新的OKR记录', new_okr_path %></h2>
+<br>
+<br>
+<h2 style="font:italic normal bold 30px Arial;color: #B22222"><%= link_to '点击返回继续了解OKR详细概念', homes_path %></h2>

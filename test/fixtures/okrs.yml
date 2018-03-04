@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Objects_num: 1
+  Objects: MyString
+  KR1: MyString
+  KR2: MyString
+  KR3: MyString
+  KR_COMPLETENESS: 1
+  WEIGHT: 1
+  COF_INDEX: MyString
+  Objects_G: MyString
+  KR1_G: MyString
+  KR2_G: MyString
+  KR_G_COMPLETENESS: 1
+  KR_G_WEIGHT: 1
+  KR_G_COF_INDEX: MyString
+  Objects_T: MyString
+  KR1_T: MyString
+  KR2_T: MyString
+  KR_T_COMPLETENESS: 1
+  KR_T_WEIGHT: 1
+  KR_T_COF_INDEX: MyString
+  VISION: MyString
+  MISSION: MyString
+  STRATEGY: MyString
+
+two:
+  Objects_num: 1
+  Objects: MyString
+  KR1: MyString
+  KR2: MyString
+  KR3: MyString
+  KR_COMPLETENESS: 1
+  WEIGHT: 1
+  COF_INDEX: MyString
+  Objects_G: MyString
+  KR1_G: MyString
+  KR2_G: MyString
+  KR_G_COMPLETENESS: 1
+  KR_G_WEIGHT: 1
+  KR_G_COF_INDEX: MyString
+  Objects_T: MyString
+  KR1_T: MyString
+  KR2_T: MyString
+  KR_T_COMPLETENESS: 1
+  KR_T_WEIGHT: 1
+  KR_T_COF_INDEX: MyString
+  VISION: MyString
+  MISSION: MyString
+  STRATEGY: MyString

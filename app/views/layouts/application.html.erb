@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="Content-Type" content="text/html; charset=UTF-8">
+  <title>OKR</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag "http://www.w3cschool.cn/statics/assets/react/react.min.js"%>
+<%= javascript_include_tag "http://www.w3cschool.cn/statics/assets/react/react-dom.min.js" %>	
+ <%= javascript_include_tag "http://www.w3cschool.cn/statics/assets/react/babel.min.js" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- <div class="fl">
+     <%= image_tag "dlong.jpg" %>  
+	</div> -->
+   
+	<div class="top">
+		<div class="center top_c">
+			老师学长们新年好！欢迎来到我的OKRweb！现在北京时间是：<%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %> 
+	    </div>
+	  
+	</div>
+ 	 <!-- <div class="fr dlong">
+     <%= image_tag "dlong.jpg" %>  
+		</div> -->
+	<!-- LOGO -->
+    <div class="logo">
+    	<div class="center l_c">
+    		<div class="l_left fl">
+    			<%= image_tag "SJTU.png" %>
+               <div class="jpg">
+               	<%= image_tag "google.jpg" %>
+               </div>
+               <div class="jpgg">
+               	<%= image_tag "okr.jpg" %>
+               </div>
+				
+    		</div>
+    	    <div class="right fr">
+			<%= image_tag "logo120.png" %>
+			</div>
+			<br>
+		<div id="daohang">
+			快速访问&nbsp;|
+		</div>
+		<div class="fl">
+			<div id="app"></div>
+        <script type="text/babel">
+     var WebSite = React.createClass({
+      render: function() {
+        return (
+          <div>
+            <Link site={this.props.site} />
+            <Link1 site1={this.props.site1} />
+            <Link2 site2={this.props.site2} />
+            <Link3 site3={this.props.site3} />
+          </div>
+        );
+      }
+    });
+
+    var Link = React.createClass({
+      render: function() {
+        return (
+          <a href={this.props.site}>
+            <h5 title="查看所有的第一条OKR详细记录">OKR 详情1&nbsp;|</h5>
+          </a>
+        );
+      }
+    });
+
+    var Link1 = React.createClass({
+      render: function() {
+        return (
+        
+          <a href={this.props.site1}>
+          <div id="show2" title="查看所有的第二条OKR详细记录">
+            OKR 详情2&nbsp;|
+            </div>
+          </a>
+          
+        );
+      }
+    });
+
+     var Link2 = React.createClass({
+      render: function() {
+        return (
+        
+          <a href={this.props.site2}>
+          <div id="edit" title="编辑所有的第一条OKR记录">
+            OKR 编辑1&nbsp;|
+            </div>
+          </a>
+          
+        );
+      }
+    });
+
+    var Link3 = React.createClass({
+      render: function() {
+        return (
+        
+          <a href={this.props.site3}>
+          <div id="edit2" title="编辑所有的第二条OKR记录">
+            OKR 编辑2&nbsp;|
+
+            </div>
+          </a>
+          
+        );
+      }
+    });
+
+
+    ReactDOM.render(
+      <WebSite site=" http://localhost:3000/okrs/1" site1="http://localhost:3000/okrs/2" site2=" http://localhost:3000/okrs/1/edit" site3=" http://localhost:3000/okrs/2/edit"  />,
+      document.getElementById('app')
+    );
+    </script>
+    		</div>
+		</div>
+
+	</div>
+	<!-- 进入（过度） -->
+	<div class="jinru">
+	
+		<div class="center">
+		
+		<h1>欢迎来到OKR STATE</h1>
+		<hr>
+		<%= image_tag "OKR4_副本" %>
+		<%= image_tag "OKR7.jpg" %>
+
+		<br>
+		<!-- <img src="../images/OKR4_副本.png" alt=""> -->
+		<!-- <img src="images/OKR7.png" alt=""> assets/images/-->
+	</div>
+	
+	</div>
+	
+<%= yield %>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="center">
+		
+			<%= image_tag "long.jpg" %>
+		
+	</div>
+</body>
+</html>

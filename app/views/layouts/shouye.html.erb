@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google OKR</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+</head>
+<body>
+  <!-- <div class="fl">
+     <%= image_tag "dlong.jpg" %>  
+  </div> -->
+   
+  <div class="top">
+    <div class="center top_c">
+      老师学长们新年好！欢迎来到我的OKRweb!现在北京时间是：<%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %> 
+      </div>
+    
+  </div>
+   <!-- <div class="fr dlong">
+     <%= image_tag "dlong.jpg" %>  
+    </div> -->
+  <!-- LOGO -->
+    <div class="logo">
+      <div class="center l_c">
+        <div class="l_left fl">
+          <%= image_tag "SJTU.png" %>
+          <div class="jpg">
+                <%= image_tag "google.jpg" %>
+               </div>
+               <div class="jpgg">
+                <%= image_tag "okr.jpg" %>
+               </div>
+        </div>
+          <div class="right fr">
+      <%= image_tag "logo120.png" %>
+      </div>
+      </div>
+      </div>
+<div class="jinru">
+  
+    <div class="center">
+    <%= image_tag "OKR5_副本.jpg" %>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+      <%= yield %>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<%= form_for(@okr) do |f| %>
+  <% if @okr.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@okr.errors.count, "error") %> prohibited this okr from being saved:</h2>
+
+      <ul>
+      <% @okr.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<h2 class="center">MY OKR</h2>
+<div class="center">
+<table>
+  <div class="field fl ">
+    <thead>
+      <tr>
+        <th><%= f.label :Objects_num %></th>
+        <th><%= f.number_field :Objects_num %></th>
+      </tr>
+    </thead>
+  </div>
+  <tbody>
+    <div class="field fl">
+      <tr>
+        <td><%= f.label :Objects %></td>
+        <td><%= f.text_area :Objects %></td>
+      </tr>
+    </div>
+    <div class="field fl dis">
+      <tr>
+          <td><%= f.label :KR1 %></td>
+          <td><%= f.text_area :KR1 %></td>
+      </tr>
+    </div>
+       
+    <div class="field fl dis">
+       <tr>
+          <td><%= f.label :KR2 %></td>
+          <td><%= f.text_area :KR2 %></td>
+        </tr>   
+    </div>
+    <div class="field fl dis">
+        <tr>
+          <td><%= f.label :KR3 %></td>
+          <td><%= f.text_area :KR3 %></td>
+        </tr>
+    </div>
+    <div class="field fl dis">
+        <tr>
+          <td><%= f.label :KR_COMPLETENESS %></td>
+          <td><%= f.number_field :KR_COMPLETENESS %></td>
+        </tr>
+    </div>
+
+    <div class="field fl dis">
+         <tr>
+          <td><%= f.label :WEIGHT %></td>
+          <td><%= f.number_field :WEIGHT %></td>
+          </tr>
+    </div>
+
+    <div class="field fl">
+        <tr>
+          <td><%= f.label :COF_INDEX %></td>
+          <td><%= f.text_field :COF_INDEX %></td>
+        </tr>
+    </div>
+    </tbody>
+    </table>
+  <table>
+    <thead>
+      <div class="field fl dis ">
+      <tr>
+        <th><%= f.label :Objects_G %></th>
+        <th><%= f.text_area :Objects_G %></th>
+      </tr>
+      </div>
+    </thead>
+    <tbody>
+<h2>OKR OF GROUP</h2>
+      <div class="field fl dis">
+        <tr>
+          <td><%= f.label :KR1_G %></td>
+          <td><%= f.text_area :KR1_G %></td>
+        </tr>
+      </div>
+      <div class="field fl dis">
+        <tr>
+          <td><%= f.label :KR2_G %></td>
+          <td><%= f.text_area :KR2_G %></td>
+        </tr>
+      </div>
+  <div class="field fl dis">
+    <tr>
+      <td><%= f.label :KR_G_COMPLETENESS %></td>
+      <td><%= f.number_field :KR_G_COMPLETENESS %></td>
+    </tr>
+  </div>
+  <div class="field fl dis">
+    <tr>
+      <td><%= f.label :KR_G_WEIGHT %></td>
+      <td><%= f.number_field :KR_G_WEIGHT %></td>
+    </tr>
+  </div>
+  <div class="field fl dis">
+    <tr>
+      <td><%= f.label :KR_G_COF_INDEX %></td>
+      <td><%= f.text_field :KR_G_COF_INDEX %></td>
+    </tr>
+  </div>
+  </tbody>
+  </table>
+<h2>OKR OF OUR TEAM</h2>
+<table>
+<thead>
+ 
+  <div class="field fl">
+  <tr>
+    <th><%= f.label :Objects_T %></th>
+    <th><%= f.text_area :Objects_T %></th>
+  </tr>
+  </div>
+  </thead>
+  <tbody>
+  <div class="field fl dis">
+  <tr>
+    <td><%= f.label :KR1_T %></td>
+    <td><%= f.text_area :KR1_T %></td>
+    </tr>
+  </div>
+  <div class="field fl dis">
+  <tr>
+    <td><%= f.label :KR2_T %></td>
+    <td><%= f.text_area :KR2_T %></td>
+    </tr>
+  </div>
+  <div class="field fl dis">
+  <tr>
+    <td><%= f.label :KR_T_COMPLETENESS %></td>
+    <td><%= f.number_field :KR_T_COMPLETENESS %></td>
+    </tr>
+  </div>
+  <div class="field fl dis">
+  <tr>
+    <td><%= f.label :KR_T_WEIGHT %></td>
+    <td><%= f.number_field :KR_T_WEIGHT %></td>
+    </tr>
+  </div>
+  <div class="field fl dis">
+  <tr>
+    <td><%= f.label :KR_T_COF_INDEX %></td>
+    <td><%= f.text_field :KR_T_COF_INDEX %></td>
+    </tr>
+  </div>
+  </tbody>
+  </table>
+
+<h2>VMS OF OUR TEAM</h2>
+<table>
+<thead>
+  <div class="field fl dis">
+  <tr>
+    <th><%= f.label :VISION %></th>
+    <th><%= f.text_area :VISION %></th>
+    </tr>
+  </div>
+  </thead>
+  <tbody>
+  <div class="field fl">
+    <tr>
+    <td><%= f.label :MISSION %></td>
+    <td><%= f.text_area :MISSION %></td>
+    </tr>
+  </div>
+  <div class="field fl dis">
+  <tr>
+    <td><%= f.label :STRATEGY %></td>
+    <td><%= f.text_area :STRATEGY %></td>
+    </tr>
+  </div>
+  </tbody>
+  </table>
+
+
+  <div class="actions">
+   
+    <h3><%= f.submit '提交并保存' %></h3>
+  
+  </div>
+</div>
+<% end %>
