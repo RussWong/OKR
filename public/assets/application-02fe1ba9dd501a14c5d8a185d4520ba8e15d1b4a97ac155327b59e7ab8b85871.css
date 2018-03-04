@@ -1,0 +1,403 @@
+/* line 4, /home/huang/OKR/app/assets/stylesheets/homes.scss */
+.jinru #attention {
+  font-size: 50px;
+}
+@charset "UTF-8";
+/* line 4, /home/huang/OKR/app/assets/stylesheets/okrs.scss */
+th {
+  border: 3px groove yellow;
+  text-align: center;
+  font: normal 700 20px "宋体";
+  height: 60px;
+}
+
+/* line 10, /home/huang/OKR/app/assets/stylesheets/okrs.scss */
+td {
+  border: 3px groove yellow;
+  text-align: center;
+  font: normal 700 20px "宋体";
+  height: 50px;
+}
+
+/* line 16, /home/huang/OKR/app/assets/stylesheets/okrs.scss */
+table, th {
+  background-color: #FFFFCC;
+  color: black;
+  text-align: center;
+}
+
+/* line 22, /home/huang/OKR/app/assets/stylesheets/okrs.scss */
+table {
+  width: 100%;
+}
+
+/* line 26, /home/huang/OKR/app/assets/stylesheets/okrs.scss */
+.center {
+  width: 1300px;
+  margin: 0 auto;
+}
+/* line 29, /home/huang/OKR/app/assets/stylesheets/okrs.scss */
+.center h1, .center h2 {
+  text-align: center;
+}
+
+/* line 34, /home/huang/OKR/app/assets/stylesheets/okrs.scss */
+.dis {
+  margin-left: 14px;
+}
+
+/* line 37, /home/huang/OKR/app/assets/stylesheets/okrs.scss */
+h1, h2 {
+  height: 40px;
+  text-align: center;
+  font-family: "楷体";
+}
+
+/* line 42, /home/huang/OKR/app/assets/stylesheets/okrs.scss */
+.sh .ed .de {
+  font-size: 20px;
+}
+
+/* line 45, /home/huang/OKR/app/assets/stylesheets/okrs.scss */
+h3 {
+  height: 0px;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* line 51, /home/huang/OKR/app/assets/stylesheets/okrs.scss */
+.ziti {
+  font-size: 18px;
+}
+
+/* line 55, /home/huang/OKR/app/assets/stylesheets/okrs.scss */
+h4 {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* line 59, /home/huang/OKR/app/assets/stylesheets/okrs.scss */
+#show_1:hover {
+  background-color: gold;
+}
+
+/* line 62, /home/huang/OKR/app/assets/stylesheets/okrs.scss */
+#show_1 {
+  color: black;
+  text-align: center;
+  font: italic normal bold 25px Arial;
+}
+
+/* line 68, /home/huang/OKR/app/assets/stylesheets/okrs.scss */
+#notice {
+  text-align: center;
+  font: italic normal bold 30px Arial;
+}
+/* line 1, /home/huang/OKR/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/huang/OKR/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /home/huang/OKR/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /home/huang/OKR/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /home/huang/OKR/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /home/huang/OKR/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /home/huang/OKR/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /home/huang/OKR/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /home/huang/OKR/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /home/huang/OKR/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /home/huang/OKR/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /home/huang/OKR/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+@charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/* line 17, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.top {
+  height: 47px;
+  background-color: #fae8c8;
+}
+/* line 20, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.top .top_c {
+  height: 47px;
+  line-height: 47px;
+  font-size: 20px;
+  color: white;
+  background-color: #700000;
+}
+
+/*版心样式*/
+/* line 31, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.center {
+  width: 1300px;
+  margin: 0 auto;
+}
+/* line 34, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.center h1 {
+  text-align: center;
+}
+/* line 37, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.center #attention {
+  font-size: 50px;
+}
+
+/* line 42, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.logo {
+  background-color: #fae8c8;
+  height: 130px;
+}
+/* line 45, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.logo .l_c {
+  height: 130px;
+  background-color: #700000;
+}
+/* line 52, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.logo .l_left h1 a {
+  display: inline-block;
+  width: 375px;
+  height: 99px;
+  background: url(../images/SJTU.png);
+}
+
+/* line 61, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.right {
+  display: inline-block;
+  width: 92px;
+  height: 95px;
+  background: url(../images/logo120.png);
+}
+
+/* line 67, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.jinru {
+  height: 550px;
+}
+
+/* line 71, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.dlong {
+  margin-top: 0;
+}
+
+/* line 80, /home/huang/OKR/app/assets/stylesheets/application.scss */
+html, body, ul, li, p, h1, h2, h3, h4, img {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 84, /home/huang/OKR/app/assets/stylesheets/application.scss */
+img {
+  border: 0;
+}
+
+/* line 87, /home/huang/OKR/app/assets/stylesheets/application.scss */
+ul {
+  list-style: none;
+}
+
+/* line 90, /home/huang/OKR/app/assets/stylesheets/application.scss */
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+}
+
+/* line 95, /home/huang/OKR/app/assets/stylesheets/application.scss */
+select, input {
+  vertical-align: middle;
+}
+
+/* line 98, /home/huang/OKR/app/assets/stylesheets/application.scss */
+body {
+  font: normal normal 12px "楷体";
+  color: #4c4c4c;
+  background-color: #fae8c8;
+}
+
+/* line 104, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.fl {
+  float: left;
+}
+
+/* line 107, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.fr {
+  float: right;
+}
+
+/* line 110, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.clearfix:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+/* line 118, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 121, /home/huang/OKR/app/assets/stylesheets/application.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 124, /home/huang/OKR/app/assets/stylesheets/application.scss */
+h5 {
+  background-color: #700;
+  font: normal normal 20px "楷体";
+  color: #fff;
+  position: absolute;
+  top: 115px;
+  left: 400px;
+}
+
+/* line 132, /home/huang/OKR/app/assets/stylesheets/application.scss */
+#show2 {
+  background-color: #700;
+  font: normal normal 20px "楷体";
+  color: #fff;
+  position: absolute;
+  top: 148px;
+  left: 530px;
+}
+
+/* line 140, /home/huang/OKR/app/assets/stylesheets/application.scss */
+#edit {
+  background-color: #700;
+  font: normal normal 20px "楷体";
+  color: #fff;
+  position: absolute;
+  top: 148px;
+  left: 650px;
+}
+
+/* line 148, /home/huang/OKR/app/assets/stylesheets/application.scss */
+#edit2 {
+  background-color: #700;
+  font: normal normal 20px "楷体";
+  color: #fff;
+  position: absolute;
+  top: 148px;
+  left: 770px;
+}
+
+/* line 156, /home/huang/OKR/app/assets/stylesheets/application.scss */
+#daohang {
+  background-color: #700;
+  font: normal normal 20px "楷体";
+  color: #fff;
+  position: absolute;
+  top: 147px;
+  left: 280px;
+}
+
+/* line 164, /home/huang/OKR/app/assets/stylesheets/application.scss */
+#show2:hover {
+  background-color: gold;
+}
+
+/* line 167, /home/huang/OKR/app/assets/stylesheets/application.scss */
+h5:hover {
+  background-color: gold;
+}
+
+/* line 170, /home/huang/OKR/app/assets/stylesheets/application.scss */
+#edit:hover {
+  background-color: gold;
+}
+
+/* line 173, /home/huang/OKR/app/assets/stylesheets/application.scss */
+#edit2:hover {
+  background-color: gold;
+}
+
+/* line 176, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.jpg {
+  position: absolute;
+  left: 710px;
+  top: 48px;
+}
+
+/* line 181, /home/huang/OKR/app/assets/stylesheets/application.scss */
+.jpgg {
+  position: absolute;
+  left: 900px;
+  top: 48px;
+}
