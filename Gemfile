@@ -49,6 +49,6 @@ end
 group :production do
   # gems specifically for Heroku go here
   gem 'pg', '~> 0.15'
-  
+  gem 'rails_12factor'
 end
 
