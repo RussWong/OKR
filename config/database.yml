@@ -50,13 +50,14 @@ test:
 production:
 #<<: *default
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
   pool: 5
   username: fedoraAdmin
   password: 19971014hzw
-  socket: /var/run/mysqld/mysqld.sock
-  database_url: postgres://zkvgknmukhoqse:78621ec3721c7760a22a4c3f3925b8de972a6eb810223f5f2a8d3c39690e3884@ec2-54-221-207-184.compute-1.amazonaws.com:5432/d3tbnr2dftbq50
+#socket: /var/run/mysqld/mysqld.sock
+  database: postgres://zkvgknmukhoqse:78621ec3721c7760a22a4c3f3925b8de972a6eb810223f5f2a8d3c39690e3884@ec2-54-221-207-184.compute-1.amazonaws.com:5432/d3tbnr2dftbq50
   host: localhost
+  timeout: 5000
 #username: OKR
-  password: <%= ENV['OKR_DATABASE_PASSWORD'] %>
-  url: <%= ENV['DATABASE_URL'] %>
+#password: <%= ENV['OKR_DATABASE_PASSWORD'] %>
+# url: <%= ENV['DATABASE_URL'] %>
