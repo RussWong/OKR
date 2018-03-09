@@ -48,11 +48,11 @@ end
 
 group :production do
   # gems specifically for Heroku go here
-<<<<<<< HEAD
-  gem 'pg', '~> 0.15'
+
+  #gem 'pg', '~> 0.15'
   gem 'rails_12factor'
-=======
+
   gem "pg"
->>>>>>> OKRR
+
 end
 
