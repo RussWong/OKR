@@ -50,7 +50,7 @@ test:
 production:
 #<<: *default
   adapter: postgresql
-  encoding: utf8
+  encoding: UTF8
   pool: 5
   username: fedoraAdmin
   password: 19971014hzw
