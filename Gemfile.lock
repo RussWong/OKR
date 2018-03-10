@@ -163,7 +163,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (>= 0.3.13, < 0.5)
-  pg (~> 0.15)
+  pg
   rails (= 4.2.9)
   rails_12factor
   sass-rails (~> 5.0)
